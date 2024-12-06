@@ -19,7 +19,6 @@ let similarityScore: number = 0
 
 columnA.map((a) => {
 	const matches = columnB.filter((b) => b === a).length
-	// console.log(a, "=>", matches)
 	similarityScore = similarityScore + a * matches
 })
 

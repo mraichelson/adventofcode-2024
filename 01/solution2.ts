@@ -15,10 +15,14 @@ inputFileContent.split(/\r?\n/).map((line) => {
 	}
 })
 
+// const columnAmax = Math.max(...columnA)
+// const columnBmax = Math.max(...columnB)
+
 const columnAsorted = columnA.toSorted()
 const columnBsorted = columnB.toSorted()
 
 const calcs: number[] = []
+
 columnAsorted.map((_a: number, index: number) => {
 	calcs.push(Math.abs(columnAsorted[index] - columnBsorted[index]))
 })

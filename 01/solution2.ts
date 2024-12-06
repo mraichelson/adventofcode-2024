@@ -15,21 +15,12 @@ inputFileContent.split(/\r?\n/).map((line) => {
 	}
 })
 
-// const columnAmax = Math.max(...columnA)
-// const columnBmax = Math.max(...columnB)
+let similarityScore: number = 0
 
-const columnAsorted = columnA.toSorted()
-const columnBsorted = columnB.toSorted()
-
-const calcs: number[] = []
-
-columnAsorted.map((_a: number, index: number) => {
-	calcs.push(Math.abs(columnAsorted[index] - columnBsorted[index]))
+columnA.map((a) => {
+	const matches = columnB.filter((b) => b === a).length
+	// console.log(a, "=>", matches)
+	similarityScore = similarityScore + a * matches
 })
 
-let calcTotal: number = 0
-
-calcs.map((value: number) => {
-	calcTotal = calcTotal + value
-})
-console.log("Calculated total is:", calcTotal)
+console.log(similarityScore)

@@ -15,6 +15,18 @@ inputFileContent.split(/\r?\n/).map((line) => {
 	}
 })
 
+/**
+ * Comment added after Day 2 completed:
+ *
+ * `.toSorted()` without a sorting function isn't reliable here
+ * but worked out ONLY because every number in the entire set
+ * set for both columns happened to be a 5 digit number.
+ *
+ * For situations with varying digits [25, 3, 170] items are sorted
+ * by the leading digit [170, 25, 3] not numerical value [3, 25, 170].
+ *
+ * Use `.toSorted((a, b) => a - b)` to sort by numerical value.
+ */
 const columnAsorted = columnA.toSorted()
 const columnBsorted = columnB.toSorted()
 

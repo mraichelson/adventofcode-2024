@@ -1,22 +1,23 @@
 {
-  "name": "adventofcode-2024",
-  "version": "1.0.0",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "day1": "tsx 01/solution.ts",
-    "day1x": "tsx 01/solution2.ts"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "@types/node": "^22.10.1",
-    "day1": "^1.0.0",
-    "run": "^1.5.0",
-    "ts-node": "^10.9.2",
-    "tsx": "^4.19.2",
-    "typescript": "^5.7.2"
-  }
+	"name": "adventofcode-2024",
+	"version": "1.0.0",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"day1": "tsx 01/solution.ts",
+		"day1x": "tsx 01/solution2.ts",
+		"day2": "tsx 02/solution.ts"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"dependencies": {
+		"@types/node": "^22.10.1",
+		"day1": "^1.0.0",
+		"run": "^1.5.0",
+		"ts-node": "^10.9.2",
+		"tsx": "^4.19.2",
+		"typescript": "^5.7.2"
+	}
 }

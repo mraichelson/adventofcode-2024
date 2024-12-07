@@ -1,6 +1,6 @@
 import fs from "fs"
 
-const inputFileContent = fs.readFileSync("./input.txt", "utf-8")
+const inputFileContent = fs.readFileSync("./THE_DAY/input.txt", "utf-8")
 
 inputFileContent.split(/\r?\n/).map((line) => {
 	// Address trailing carriage return in input files.
